@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PC Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="nav-btn">Overview</div>
+    <div class="nav-btn">Stats</div>
+    <div class="nav-btn">Refresh</div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">PC Dashboard</header>
+
+    <section class="content">
+      <div class="card">
+        <p>Total</p>
+        <h2 id="total">--</h2>
+      </div>
+
+      <button id="loadBtn">
+        <span class="spinner"></span>
+        Load
+      </button>
+
+      <img src="duck.png" class="duck">
+    </section>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
