@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #eef1f4;
+}
+
+.sidebar {
+  width: 72px;
+  background: #0e1117;
+  border-right: 3px solid #00ffd5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.nav-btn {
+  color: #c9d1d9;
+  margin: 16px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 64px;
+  background: #0e1117;
+  border-bottom: 3px solid #00ffd5;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+}
+
+.card {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+#loadBtn {
+  margin-top: 30px;
+  background: #0e1117;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #444;
+  border-top: 2px solid #00ffd5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.duck {
+  width: 70px;
+  position: absolute;
+  right: 40px;
+  bottom: 25px;
+  animation: duckJump 1.4s ease-in-out infinite;
+}
+
+@keyframes duckJump {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-28px); }
+}
